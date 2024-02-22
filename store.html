@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        if(window.sessionStorage.getItem("login")==1){
+   
+    window.location.replace("bill.html");
+}
+else if(window.sessionStorage.getItem("login")==2){
+    window.location.replace("list.html");
+}
+else if(window.sessionStorage.getItem("login")==3){
+    window.location.replace("add.html");
+}
+    </script>
+     <link rel="stylesheet" href="store.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="refresh" content=""> --> 
+     <meta name="robots" tabindex="noindex">
+     <title>login page</title>
+     <link rel="canonical" href="https://glitch-digi-store.glitch.me/" />
+<meta name="description" content="A simple website, built with Glitch. Remix it to get your own."/>
+<meta name="robots" content="noindex" />
+<meta property="og:title" content="Digital Store" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://glitch-digi-store.glitch.me/" />
+<meta property="og:description" content="A simple website, built with Glitch. Remix it to get your own."/>
+<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"/>
+<meta name="twitter:card" content="summary" />
+</head>
+<body>
+    
+    <div class="mode" onclick="mode()" id="mode">
+         <img alt="mode" class="img" height="50px" width="50px" >
+     </div>
+     <div class="wrapper">
+          <div class="title"></div>
+          <form method="post" id="form" target="_blank" action="">
+           <table>
+             <caption><h1>STORE</h1></caption>
+                <tr>
+                     <td><label>Username</label></td>
+                </tr>
+                <tr>
+                     <td><input type="text" name="user" id="user" required minlength="3"> </td>
+                </tr>
+                <tr>
+                  <td><label>Password</label></td>   
+                </tr>
+                <tr>
+                 <td><input type="password" name="pass" id="pass" minlength="8" required> </td>    
+                </tr>
+                <tr><td><br></td></tr>
+                <tr align="center">
+                     <td>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Get in" onclick="check()">   
+                     </td>
+                </tr>
+           </table>              
+          </form>
+     </div>
+    
+ <script src="store.js">
+     
+ </script>
+</body>
+</html>

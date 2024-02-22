@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    
+   <div class="wrapper">
+          <div class="title"></div>
+          <form method="post" id="form" action="">
+           <table>
+             <caption><h2>Add New</h2></caption>
+                <tr>
+                     <td><label>Product Name</label></td>
+                </tr>
+                <tr>
+                     <td><input type="text" name="prod" id="prod" required> </td>
+                </tr>
+                <tr>
+                  <td><label>Price</label></td>   
+                </tr>
+                <tr>
+                 <td><input type="number" name="pr" id="pr" required> </td>    
+                </tr>
+                <tr>
+                  <td><label>Quentity</label></td>   
+                </tr>
+                <tr>
+                 <td><input type="number" name="n" id="n" required> </td>    
+                </tr>
+                <tr><td><br></td></tr>
+                <tr align="center">
+                     <td>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Add" onclick="add()">   
+                     </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="warn"></div>
+                    </td>
+                </tr>
+           </table>              
+          </form>
+     </div>
+     
+     <div class="back" align="center">
+         <a onclick="getBack()">Get back to login page.</a>
+     </div>     
+  <script src="store.js"></script>
+</body>
+</html>

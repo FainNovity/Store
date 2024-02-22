@@ -1,0 +1,120 @@
+:root {
+     --bg: #ff5f55;
+     --wt: #F0FFF3;
+     --white: white;
+     --th: #11CBD790;
+     --tr: #C6F1E7;
+     --font: black;
+}
+body {
+     background: var(--bg);
+     transition: all 1s;
+     color: var(--font);
+     font-family: serif;
+}
+.wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 45vh;
+        width: 40vh;
+        border-radius: 3vh;
+        background: var(--wt);     
+        overflow: hidden;  
+        overflow-y: auto; 
+        
+}
+
+form {
+        display: grid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        grid-template-columns: repeat(2,auto);
+        height: 30vh;
+        width: 40vh;
+        align-content: space-around;
+        justify-content: center;
+}
+label {
+     height: 2vh;
+     font-size: 1.7vh;
+     font-weight: 500;
+}
+input {
+     height: 2vh;
+     width: 20vh;
+     font-size: 1.5vh;
+     border-radius: 0.8vh;
+     background: var(--white);
+}
+input[type="submit"], input[type="reset"] {
+     font-family: serif;
+     margin: 0.5vh;
+     font-weight: 600;
+     height: 3vh;
+     width: 8vh;
+     background: var(--white);
+     border: none;
+     filter: drop-shadow(0px 0px 5px var(--bg));
+}
+caption {
+     font-stretch: extra-expanded;
+     letter-spacing: 0.5vh;
+}
+.contain {
+    height: 40vh;
+    position: relative;
+    top: 0%;
+    overflow: hidden;
+    overflow-y: auto; 
+}
+.list {
+     width: 40vh;
+     font-size: 1.7vh;
+     font-weight: 500;
+}
+td {
+    word-wrap: break-word;
+}
+.list, .list tr,.list td, .list th {
+    border: 0.1vh #DDE6ED dashed;
+    border-collapse: collapse;
+}
+.warn {
+    font-family: monospace;
+    font-weight: 700;
+}
+.total {
+    display: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 80%;
+}
+.back {
+    position: absolute;
+    font-size: 1.3vh;
+    left: 50%;
+    transform: translateX(-50%);       
+    top: 80vh;
+    font-family: monospace;
+    font-weight: 700;
+    
+}
+
+.contain tr {
+    background-color: var(--tr);
+}
+.contain th {
+    background-color: var(--th);
+}
+.mode {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 10vh;
+    left: 50%;
+    transition: top 1s ease-in;
+}

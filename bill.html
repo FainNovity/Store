@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="store.css">
+     <meta charset="UTF-8">
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>bill</title>
+     
+</head>
+<body>
+     
+     <div class="contain">
+          <table align="center" class="list" border="0" cellspacing="0">
+          <th>Index</th>
+          <th width="40%">Product</th>
+          <th width="30%">Price</th>
+          <th>Avl.</th>
+          </table>
+     </div>
+  <div class="wrapper">
+          <div class="title"></div>
+          <form method="post" id="form" action="">
+           <table cellspacing="0">
+             <caption><h3>Bill Up Things</h3></caption>
+                <tr>
+                     <td><label>Product code</label></td>
+                </tr>
+                <tr>
+                     <td><input type="number" name="code" id="code" class="code" required> </td>
+                </tr>
+                <tr>
+                  <td><label>Quentity</label></td>   
+                </tr>
+                <tr>
+                 <td><input type="number" name="que" id="que" class="que" required> </td>    
+                </tr>
+                <tr><td><br></td></tr>
+                <tr align="center">
+                     <td>
+                <input type="reset" value="Clear" onclick="empt()">
+                <input type="reset" value="Next" onclick="next()">
+                <input type="submit" value="Bill up" onclick="bill()">   
+                     </td>
+                </tr>
+                <tr align="center">
+                    <td class="warn"></td>
+                </tr>
+           </table>              
+          </form>
+     </div>
+      <div class="total">
+        <table class="list" align="center" valign="bottom">
+          
+        </table> 
+     </div>
+     <div class="back" align="center">
+         <a onclick="getBack()">Get back to login page.</a>
+     </div>
+ <script src="store.js">
+      
+ </script>   
+</body>
+</html>
