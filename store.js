@@ -81,7 +81,7 @@ function init(name,prod){
 
 function getBack(){
     window.sessionStorage.setItem("login",0);
-    window.location.replace("store.html");
+    window.location.replace("index.html");
 }
 
 function empt(){
