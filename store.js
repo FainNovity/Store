@@ -58,8 +58,9 @@ function check(){
      var user=document.getElementById('user').value;
      var pass=document.getElementById('pass').value;
      if(user=="Admin" && pass=="StorePageBill"){
-  document.getElementById('form').setAttribute("action","https://store-managment.netlify.app/bill.html"); 
-      window.sessionStorage.setItem("login",1);
+  //document.getElementById('form').setAttribute("action","https://store-managment.netlify.app/bill.html"); 
+  window.navigate('https://store-managment.netlify.app/bill.html');    
+  window.sessionStorage.setItem("login",1);
      }  
      else if(user=="Admin" && pass=="StorePageList"){
   document.getElementById('form').setAttribute("action","https://store-managment.netlify.app/list.html"); 
