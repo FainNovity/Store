@@ -58,15 +58,15 @@ function check(){
      var user=document.getElementById('user').value;
      var pass=document.getElementById('pass').value;
      if(user=="Admin" && pass=="StorePageBill"){
-  document.getElementById('form').setAttribute("action","bill.html"); 
+  document.getElementById('form').setAttribute("action","./bill.html"); 
       window.sessionStorage.setItem("login",1);
      }  
      else if(user=="Admin" && pass=="StorePageList"){
-  document.getElementById('form').setAttribute("action","list.html"); 
+  document.getElementById('form').setAttribute("action","./list.html"); 
       window.sessionStorage.setItem("login",2);  
      }  
      else if(user=="Admin" && pass=="StorePageAdd"){
-  document.getElementById('form').setAttribute("action","add.html");  
+  document.getElementById('form').setAttribute("action","./add.html");  
        window.sessionStorage.setItem("login",3);
      }  
 }
