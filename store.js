@@ -58,11 +58,11 @@ function check(){
      var user=document.getElementById('user').value;
      var pass=document.getElementById('pass').value;
      if(user=="Admin" && pass=="StorePageBill"){
-  document.getElementById('form').setAttribute("action","./bill.html"); 
+  document.getElementById('form').setAttribute("action","https://store-managment.netlify.app/bill.html"); 
       window.sessionStorage.setItem("login",1);
      }  
      else if(user=="Admin" && pass=="StorePageList"){
-  document.getElementById('form').setAttribute("action","./list.html"); 
+  document.getElementById('form').setAttribute("action","https://store-managment.netlify.app/list.html"); 
       window.sessionStorage.setItem("login",2);  
      }  
      else if(user=="Admin" && pass=="StorePageAdd"){
